@@ -7,8 +7,10 @@ import { VComponent } from 'vienna-ts';
     <navbar-component></navbar-component>
     
     <div class="container">
-      Wedstrijd
+      <sub-component items="{{ items }}"></sub-component>
     </div>
   `,
 })
-export class WedstrijdComponent {}
+export class WedstrijdComponent {
+  items: ['first', 'second'];
+}

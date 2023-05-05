@@ -2,13 +2,19 @@ import { VApplication, VRouteNotFoundStrategy } from 'vienna-ts';
 import { HomeComponent } from './components/home.component';
 import { NavbarComponent } from './components/navbar.component';
 import { WedstrijdComponent } from './components/wedstrijd.component';
+import { SubComponent } from './components/sub.component';
 
 @VApplication({
   routes: [
     { path: '/', component: HomeComponent },
     { path: '/wedstrijd', component: WedstrijdComponent },
   ],
-  declarations: [HomeComponent, NavbarComponent, WedstrijdComponent],
+  declarations: [
+    HomeComponent,
+    NavbarComponent,
+    SubComponent,
+    WedstrijdComponent,
+  ],
   rootElementSelector: 'body',
   routeNotFoundStrategy: VRouteNotFoundStrategy.ROOT,
   globalStyles: [
